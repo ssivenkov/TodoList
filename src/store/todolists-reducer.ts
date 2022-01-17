@@ -1,4 +1,4 @@
-import {FilterValuesType, TodoListType} from '../App'
+import {FilterValuesType, TodolistType} from '../App'
 import {v1} from "uuid";
 
 type RemoveTodoListAT = {
@@ -23,7 +23,7 @@ export type ChangeTodolistFilterAT = {
     id: string
 }
 
-const todolistReducer = (todoLists: Array<TodoListType>,
+const todolistReducer = (todoLists: Array<TodolistType>,
                          action: RemoveTodoListAT |
                                   AddTodoListAT |
                               ChangeTodolistAT |
