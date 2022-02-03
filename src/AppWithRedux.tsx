@@ -74,17 +74,19 @@ function AppWithRedux() {
     return (
         <div className="App">
             <AppBar position="static">
-                <Toolbar>
-                    <Typography variant="h6">
-                        Todolist
-                    </Typography>
-                </Toolbar>
+                <Grid container justify={"center"}>
+                    <Toolbar>
+                        <Typography variant="h6">
+                            Todolist
+                        </Typography>
+                    </Toolbar>
+                </Grid>
             </AppBar>
             <Container fixed>
-                <Grid container style={{padding: "20px"}}>
+                <Grid container justify={"center"} style={{padding: "20px"}}>
                     <AddItemForm addItem={addTodolist}/>
                 </Grid>
-                <Grid container spacing={3}>
+                <Grid container justify={"center"} spacing={3}>
                     {
                         todolists.map(tl => {
                             let tasksForTodolist = tasks[tl.id];
